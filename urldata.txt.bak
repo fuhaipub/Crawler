@@ -1,8 +1,0 @@
-<script>
-        	var totalPages = 42;
-        	var totalCount = 1003;
-        	var moduleId = '328';
-        	var biz = 'talk';
-        	var subBiz = 'idx';
-			var showImpress = true;
-        </script>
