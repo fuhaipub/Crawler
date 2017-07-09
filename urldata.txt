@@ -1,0 +1,57 @@
+                    <p><a href="http://www.miibeian.gov.cn/"  rel="nofollow">粤ICP备09075143号</a><span>|</span><a href="http://res.yy.com/common/company_license/4.jpg" rel="nofollow">粤B2-20050785</a><span>|</span><a href="http://res.yy.com/common/company_license/3.jpg" rel="nofollow">增值电信业务经营许可证B2-20120219</a><span>|</span><a href="http://file.do.yy.com/group3/M02/CB/3A/tz0MYFZpIk-AatvLAAFwJNWoiww685.jpg" rel="nofollow">粤网文[2015]1712-302号</a><span>|</span><a href="javascript:;" rel="nofollow"><img src="http://yyweb.yystatic.com/pc/images/company/j.gif"/> 粤公网安备44011302000069号</a><span>|</span><a href="http://jubao.12377.cn:13225/reportinputcommon.do">中国互联网举报中心</a><span>|</span><a href="http://jb.ccm.gov.cn/" rel="nofollow">12318 全国文化市场举报网站</a>
+                    </p>
+                    <p><!-- <a href="//yyweb.yystatic.com/pc/images/company/4.jpg" rel="nofollow">视听许可证1910441号</a><span>|</span>--><a href="//yyweb.yystatic.com/pc/images/company/1.jpg" rel="nofollow">（总）出网证（粤）字014号</a><span>|</span><a href="//yyweb.yystatic.com/pc/images/company/2.jpg" rel="nofollow">节目制作经营许可证（粤）字01022号</a></p>
+                    <p>广州华多网络科技有限公司 广州聚汇信息技术有限公司 版权所有 ? 2005-2017 YY.com , All rights reserved. 联系电话：4006040010</p>
+                </div>
+            </div>
+</div>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?c493393610cdccbddc1f124d567e36ab";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script>
+        	var totalPages = 42;
+        	var totalCount = 1003;
+        	var moduleId = '328';
+        	var biz = 'talk';
+        	var subBiz = 'idx';
+			var showImpress = true;
+        </script>
+	<script id="subTpl" type="text/tmpl">
+	{{each data as item i}}
+            <li class="video-item" data-sid="{{item.sid}}" data-ssid="{{item.ssid}}" data-uid="{{item.uid}}" data-pid="{{item.pid}}" data-biz="{{item.biz}}" data-tpl="{{item.tpl}}" data-type="{{item.type}}">
+                <a class="video-box" href="{{item.liveUrl}}" target="_blank" title="{{item.desc}}">
+                <div class="video-pic"><div class="video-pic-inner"><div class="pic-default"><img src="//yyweb.yystatic.com/pc/images/default_load-799c5cbe37.png?20170620172747" alt=""></div><div class="pic-real"><img class="lazy" data-original="{{item.thumb}}" alt="" /></div></div>
+                    {{if item.type == '2'}}<div class="video-type">回放</div>{{/if}}
+                    <div class="mask"></div><i class="icon-play"></i>
+                </div>
+				</a>
+                <div class="video-info">
+                    <p class="video-title"><a href="{{item.liveUrl}}" target="_blank" title="{{item.desc}}">{{item.desc}}</a></p>
+                    <div class="audience-count">
+                    {{if item.type == '1' | item.type == '4' | item.type == '8'}}<i class="icon-people"></i>{{else}}<i class="icon-view"></i>{{/if}} 
+                    {{item.users}}</div>
+                </div>
+                {{if showImpress}}
+                <div class="anchor-tags">
+					{{if item.impressionList.length}}
+						{{each item.impressionList as tag i}}
+						<a href="/impression/{{#tag}}" target="_blank">{{#tag}}</a>
+						{{/each}}
+					{{else}}
+						<span class="no-impression">暂无标签</span>
+					{{/if}}
+                </div>
+                {{/if}}
+            </li>
+            {{/each}}
+    </script>
+	<script src="//yyweb.yystatic.com/pc/js/lib/requirejs/require-a7d9d42513.js?20170620172747"
+		data-main="//yyweb.yystatic.com/pc/js/subpageUi-6152722191.js"></script>
+</body>
+
